@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from 'react';
 import "./App.css";
 
 function App() {
@@ -6,7 +6,7 @@ function App() {
     <div className="app-container">
       <header className="app-header">
         <h1>YourArt </h1>
-        <p>Вивчай і колекціонуй картини за допомогою штучного інтелекту</p>
+        <p>Вивчай і колекціонуй картини за допомогою YourArt</p>
       </header>
 
       <main className="app-main">
