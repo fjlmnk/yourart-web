@@ -1,0 +1,144 @@
+/* --- Стили для ссылок и общего контейнера --- */
+.button-link {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  background-color: #fdfdfd;
+  color: #333;
+}
+
+/* --- Стили Главной страницы --- */
+.app-header {
+  background-color: #fff;
+  padding: 20px;
+  border-bottom: 1px solid #eee;
+}
+.app-header h1 { margin: 0; }
+.app-header p { color: #777; font-size: 1.1rem; }
+
+.app-main {
+  flex-grow: 1;
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.scan-button {
+  background: linear-gradient(90deg, #6e45e2 0%, #88d3ce 100%);
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 16px 35px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(110, 69, 226, 0.3);
+}
+.scan-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(110, 69, 226, 0.4);
+}
+.info-text {
+  margin-top: 25px;
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 400px;
+}
+.app-footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  margin-top: auto;
+}
+
+/* --- Стили Страницы Камеры --- */
+.camera-page {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.camera-header {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #4F46E5; /* Фирменный цвет YourArt */
+  margin-bottom: 20px;
+}
+.video-container {
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto 20px auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background: #222;
+}
+#webcam {
+  width: 100%;
+  height: auto;
+  display: block;
+  transform: scaleX(-1); /* Зеркальное отображение */
+}
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.control-button {
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.start-button {
+  background-color: #10B981; /* Зеленый */
+  color: white;
+}
+.capture-button {
+  background-color: #EF4444; /* Красный */
+  color: white;
+}
+.capture-button:disabled {
+  background-color: #9CA3AF; /* Серый */
+  cursor: not-allowed;
+}
+.back-button {
+  background-color: #6B7280; /* Серый */
+  color: white;
+}
+.snapshot-container {
+  margin-top: 20px;
+}
+.snapshot-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+#snapshot {
+  width: 100%;
+  max-width: 640px;
+  border-radius: 12px;
+  border: 2px solid #ddd;
+  transform: scaleX(-1); /* Зеркальное отображение снимка, как и видео */
+}
+.error-message {
+  color: #EF4444;
+  font-weight: bold;
+  margin-top: 15px;
+}
