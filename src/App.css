@@ -1,0 +1,189 @@
+/* === Общие стили === */
+.app-container {
+  min-height: 100vh;
+  font-family: "Segoe UI", sans-serif;
+  background: #1a1a1a; /* пастельный глубокий черный */
+  color: #FFD54F; /* пастельный золотой */
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+/* === Главная страница === */
+.app-header {
+  padding: 25px;
+  border-bottom: 1px solid rgba(255, 213, 79, 0.3);
+}
+
+.app-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 5px;
+}
+
+.app-header p {
+  font-size: 1.1rem;
+  opacity: 0.8;
+}
+
+.app-main {
+  padding: 60px 20px;
+  flex-grow: 1;
+}
+
+.hero-icon {
+  font-size: 5rem;
+  margin-bottom: 25px;
+}
+
+.scan-button {
+  background: #FFD54F;
+  color: #1a1a1a;
+  padding: 16px 40px;
+  border-radius: 40px;
+  border: none;
+  font-size: 1.3rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.scan-button:hover {
+  background: #ffeb99;
+}
+
+.info-text {
+  margin-top: 25px;
+  color: #ffe9aa;
+  max-width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1rem;
+}
+
+.app-footer {
+  padding: 20px;
+  border-top: 1px solid rgba(255, 213, 79, 0.3);
+  opacity: 0.7;
+}
+
+/* === Страница сканирования === */
+.scan-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  color: #FFD54F;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.header-dots span {
+  font-size: 1.5rem;
+  opacity: 0.8;
+}
+
+.scan-main {
+  padding: 20px;
+}
+
+.scan-frame-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.scan-frame {
+  position: relative;
+  width: 85%;
+  max-width: 350px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 2px solid #FFD54F;
+}
+
+.camera-preview {
+  width: 100%;
+  display: block;
+  filter: brightness(90%);
+}
+
+.scan-corner {
+  width: 25px;
+  height: 25px;
+  border: 3px solid #FFD54F;
+  position: absolute;
+}
+
+.top-left { top: 0; left: 0; border-right: none; border-bottom: none; }
+.top-right { top: 0; right: 0; border-left: none; border-bottom: none; }
+.bottom-left { bottom: 0; left: 0; border-right: none; border-top: none; }
+.bottom-right { bottom: 0; right: 0; border-left: none; border-top: none; }
+
+.scan-controls {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.control-small-btn {
+  background: none;
+  border: 2px solid #FFD54F;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #FFD54F;
+}
+
+.scan-action-btn {
+  background: #FFD54F;
+  color: #1a1a1a;
+  border: none;
+  padding: 14px 40px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.scan-carousel {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.carousel-item {
+  width: 10px;
+  height: 10px;
+  background: rgba(255, 213, 79, 0.4);
+  border-radius: 50%;
+}
+
+.carousel-item.active {
+  background: #FFD54F;
+}
+
+/* === Нижнее меню === */
+.scan-footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 15px 0;
+  border-top: 1px solid rgba(255, 213, 79, 0.3);
+}
+
+.nav-btn {
+  background: none;
+  border: none;
+  color: #FFD54F;
+  font-size: 1.8rem;
+  opacity: 0.6;
+}
+
+.nav-btn.active {
+  opacity: 1;
+}
